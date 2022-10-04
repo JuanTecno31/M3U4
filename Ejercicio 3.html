@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <script>
+            var alumnos = [
+                { nombre: 'Juan Gomez', nota: 7 }, { nombre: 'Pedro Rodriguez', nota: 4 }, { nombre: 'Roxana García', nota: 8 }, 
+                { nombre: 'Luciano Lopez', nota: 5 }, { nombre: 'Fernanda Gimenez', nota: 6 }, { nombre: 'Florencia Martinez', nota: 10 }, 
+                { nombre: 'Raul Sanchez', nota: 7 }, { nombre: 'Sandra Figueroa', nota: 8 }
+            ];
+
+
+        var a = 0;
+        var b = 0;
+
+        for (let i = 0; i <= 7; i++) {
+
+            let aprobados = alumnos.filter(persona => persona.nota > 6);
+            let nombres = aprobados.map(alumno => alumno.nombre);
+            
+            var a = aprobados;
+            var b = nombres;
+
+        }
+
+        const mensaje = "Los alumnos aprobados son: ";
+        document.write(mensaje + b);
+
+        
+
+    </script>
+</body>
+
+</html>

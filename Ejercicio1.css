@@ -1,0 +1,44 @@
+.fondo{
+    background-color: rgb(122, 122, 122);
+    display: flex;
+    justify-content: space-around;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 4%;
+    margin: 0;
+}
+
+.box {
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid black ;
+    border-radius: 0px 0px 0px 0px;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 2%;
+}
+
+@media (min-width: 100px) {
+    .box :hover {
+        transform: scale(1.05);
+        color: cornflowerblue;
+    }
+
+    .box {
+        cursor: pointer;
+    }
+
+    .box :active {
+        color: rgb(68, 68, 68);
+        border-radius: 15px 15px 15px 15px;
+    }
+}

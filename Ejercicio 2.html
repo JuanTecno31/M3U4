@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        textarea{
+            height: 150px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="texto"></textarea>
+	<div>Número de caracteres: <span id="count"></span></div>
+
+	<script>
+		function count(){
+
+			document.getElementById("count").textContent = document.getElementById("texto").value.length;
+
+		}
+		
+		document.getElementById("texto").addEventListener("input", count);
+
+	</script>
+</body>
+
+</html>
